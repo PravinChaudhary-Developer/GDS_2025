@@ -1,7 +1,9 @@
 import React from "react";
 import { HiArrowLongRight } from "react-icons/hi2";
 const VenueManagecart = ({ details }) => {
+
   const { icon, title, description, link } = details;
+  
   return (
     <div className="flex rounded-lg bg-white p-7 gap-4 shadow-lg">
       <div className="h-12 rounded-md flex items-center justify-center w-12 p-2 text-lg bg-sky-100">

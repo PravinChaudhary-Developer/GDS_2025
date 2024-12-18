@@ -31,19 +31,10 @@ const AboutTheEvent = () => {
       description:
         "Participate in hands-on workshops to learn practical skills and strategies for digital success.",
     },
-    // {
-    //   id: 4,
-    //   iconImage: code,
-    //   title: "Workshops",
-    //   description:
-    //     "Participate in hands-on workshops to learn practical skills and strategies for digital success.",
-    // },
   ];
 
   return (
     <>
-      
-
       <Title title={"About The Event"} />
 
       <section className="p-12">
@@ -58,9 +49,7 @@ const AboutTheEvent = () => {
         </ul>
       </section>
 
-
       <WhyAttendDGS />
-
 
     </>
   );

@@ -51,10 +51,10 @@ const Navigation = () => {
   return (
     <>
       <nav className="shadow-md z-50 bg-white sticky top-0 w-full p-4 px-8 flex justify-between items-center">
+
         {/* LOGO  */}
 
-        <NavLink to={"/"}>
-          {" "}
+        <NavLink onClick={() =>goToPage("home")}>
           <h1 className="text-sky-600 text-2xl font-semibold  ">DGS 2025</h1>
         </NavLink>
 
@@ -71,7 +71,6 @@ const Navigation = () => {
                 title={link}
                 key={index}
               >
-                {" "}
                 <li>{link}</li>
               </NavLink>
             );

@@ -47,7 +47,6 @@ const EventSchedule = () => {
   return (
     <>
 
-  
       <section className="m-8  my-24">
         <Title
           title={"Event Schedule"}
@@ -69,12 +68,11 @@ const EventSchedule = () => {
                     : "justify-start pl-16 "
                 } w-full mb-8 `}
               >
-                {/* Icon in the center */}
+
                 <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                   <GoDotFill className="h-8 w-8 text-sky-600" />
                 </span>
 
-                {/* Event Content */}
                 <div
                   className={`w-[45%] p-2 rounded-lg bg-gray-50  ${
                     event.id % 2 === 0 ? "text-right" : "text-left"

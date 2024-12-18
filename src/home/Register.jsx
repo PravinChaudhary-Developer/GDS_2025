@@ -25,8 +25,8 @@ const Register = () => {
     const gst = (price * qty * 18) / 100;
     const GST = Math.ceil(gst);
     const sabtotal = price * qty;
-    setInputForm((prevState) => ({
-      ...prevState,
+    setInputForm((prev) => ({
+      ...prev,
       totalPrice: sabtotal + GST,
     }));
   }, [price, qty]);
@@ -67,7 +67,9 @@ const Register = () => {
             <h1 className="text-lg font-semibold py-4">Personal Information</h1>
 
             <div className="grid grid-cols-2 justify-between items-center w-full md:w-[720px] gap-6">
+
               {/* First Name */}
+
               <label className="text-sm grid gap-1" htmlFor="fname">
                 First Name*
                 <input
@@ -83,6 +85,7 @@ const Register = () => {
               </label>
 
               {/* Last Name */}
+
               <label className="text-sm grid gap-1" htmlFor="lname">
                 Last Name*
                 <input
@@ -98,6 +101,7 @@ const Register = () => {
               </label>
 
               {/* Email Address */}
+
               <label className="text-sm grid gap-1" htmlFor="email">
                 Email Address*
                 <input
@@ -113,6 +117,7 @@ const Register = () => {
               </label>
 
               {/* Phone Number */}
+
               <label className="text-sm grid gap-1" htmlFor="phone">
                 Phone Number*
                 <input
@@ -127,7 +132,6 @@ const Register = () => {
                 />
               </label>
 
-              {/* Company/Organization */}
               <div className="col-span-2">
                 <label className="text-sm grid gap-1" htmlFor="company">
                   Company/Organization

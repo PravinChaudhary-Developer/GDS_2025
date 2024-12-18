@@ -2,7 +2,7 @@ import React from "react";
 
 
 const EventTime = ({ details }) => {
-  const { id, time, title, description } = details;
+  const { time, title, description } = details;
   return (
     <>
       <div className={`"p-3  rounded-lg hover:shadow-md shadow-sm duration-300 grid gap-1 p-8 text-left  "`}>

@@ -1,6 +1,5 @@
 import React from "react";
 import { SiTicktick } from "react-icons/si";
-// import { TiTick } from "react-icons/ti";
 
 const WhyAttendDGS = () => {
   const option = [
