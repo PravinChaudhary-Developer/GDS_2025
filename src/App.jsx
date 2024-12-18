@@ -1,13 +1,23 @@
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Index from "./home/Index";
+import Home from "./home/Home";
 
 function App() {
-
+  const Router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Index />,
+      children: [
+        { path: "/", element: <Home /> },
+      ],
+    },
+  ]);
 
   return (
     <>
-    <h1>GDS 2025</h1>
+      <RouterProvider router={Router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
